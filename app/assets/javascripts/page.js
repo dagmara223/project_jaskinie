@@ -5,5 +5,8 @@ $(function() {
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	});
 	OpenStreetMap_BlackAndWhite.addTo(map);
+
+	var marker = L.marker([52.23, 21.03]).addTo(map);
+	
 });
 
