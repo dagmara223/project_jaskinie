@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :caves
+
   get 'page/map'
 
   root 'page#map'
