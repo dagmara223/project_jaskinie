@@ -10,6 +10,11 @@ class CavesController < ApplicationController
   # GET /caves/1
   # GET /caves/1.json
   def show
+    @cafe = Cave.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /caves/new

@@ -20,14 +20,17 @@
         <td><%= cafe.description %></td>
         <td><%= cafe.lat %></td>
         <td><%= cafe.lon %></td>
-        <td><%= link_to 'Show', cafe %></td>
+        <td><%= link_to 'Show', cafe, remote: true %></td>
         <td><%= link_to 'Edit', edit_cafe_path(cafe) %></td>
         <td><%= link_to 'Destroy', cafe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
 
 <%= link_to 'New Cave', new_cafe_path %>
+
+<div id="map_show"></div>
+
+
